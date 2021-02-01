@@ -41,10 +41,13 @@ vue init nuxt/starter
 4.安装依赖包
 
 npm install
+
 5.启动服务
 
 npm run dev
+
 目录结构
+```
 |-- .nuxt                            // Nuxt自动生成，临时的用于编辑的文件，build
 |-- assets                           // 用于组织未编译的静态资源入LESS、SASS 或 JavaScript
 |-- components                       // 用于自己编写的Vue组件，比如滚动组件，日历组件，分页组件
@@ -61,12 +64,17 @@ npm run dev
 |-- package-lock.json                // npm自动生成，用于帮助package的统一性设置的，yarn也有相同的操作
 |-- package-lock.json                // npm自动生成，用于帮助package的统一性设置的，yarn也有相同的操作
 |-- package.json                     // npm包管理配置文件
+```
 1.配置IP和端口号
 
 修改项目根目录package.json文件（如下图）
+
 ![Image text](https://images2018.cnblogs.com/blog/1324387/201806/1324387-20180604171849223-1550445835.png)
 
 Nuxt.js对路由进行了封装，无需像vue一样配置route/index.js，是自动生成的在目录/.nuxt/router.js。
+
 当我们创建完页面，会发现目录/.nuxt/router.js文件已经自动生成路由。多级路由后面再说。
+
 打包：npm run generate
+
 打包后需要在服务器环境才能查看效果哦
